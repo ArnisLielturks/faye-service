@@ -11,7 +11,7 @@ nodejs faye-service.js
 ```NodeJS
 nodejs faye-message-broadcaster.js
 ```
-You can also publish messages to this server using different language, for example PHP: https://github.com/ArnisLielturks/faye-client
+You can also publish messages to this server using different language, for example in Laravel(PHP): https://github.com/ArnisLielturks/faye-client
 
 3. Run the listener in NodeJS application. Make sure that the faye-service is up and running!
 ```NodeJS
