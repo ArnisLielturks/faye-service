@@ -1,0 +1,23 @@
+<!doctype html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Faye demo: listener</title>
+    <script src="http://127.0.0.1:8000/faye/client.js"></script>
+  </head>
+  <body>
+      <div id="content">
+      </div>
+      <script>
+        var client = new Faye.Client('http://127.0.0.1:8000/');
+
+        client.subscribe('/test', function(message) {
+          console.log('Got a message: ' + message);
+          document.getElementById('content').innerHTML += '<br>' + JSON.stringify(message);
+        });
+      </script>
+    </div>
+
+  </body>
+</html>
